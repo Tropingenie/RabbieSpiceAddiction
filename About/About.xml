@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <packageId>PonPon.RabbieSpiceAddiction</packageId>
+    <name>Rabbie Spice of Life Addiction</name>
+    <description>Patches Spice of Life to be an addiction.</description>
+    <author>Pon Pon</author>
+
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+
+    <url>https://github.com/Tropingenie/RabbieSpiceAddiction</url>
+
+    <modDependencies>
+        <li>
+            <packageId>RunneLatki.RabbieRaceMod</packageId>
+            <displayName>Rabbie The Moonrabbit Race</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1837246563</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+
+    <loadafter>
+        <li>RunneLatki.RabbieRaceMod</li>
+    </loadafter>
+
+    <forceLoadAfter>
+        <li>RunneLatki.RabbieRaceMod</li>
+    </forceLoadAfter>
+
+</ModMetaData>

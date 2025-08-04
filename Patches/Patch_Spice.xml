@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Remove everCurableByItem -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/HediffDef[defName="PlanetariumAddiction"]/everCurableByItem</xpath>
+  </Operation>
+  <!-- Change label to "Spice Withdrawl" -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="PlanetariumAddiction"]/stages/li[2]/label</xpath>
+    <value>
+      <label>Spice Withdrawl</label>
+    </value>
+  </Operation>
+  <!-- Add description "The Spice Must Flow" -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="PlanetariumAddiction"]/stages/li[2]/label</xpath>
+    <value>
+      <description>The spice must flow...</description>
+    </value>
+  </Operation>
+</Patch>
