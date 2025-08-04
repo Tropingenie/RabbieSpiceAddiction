@@ -11,7 +11,7 @@
       <label>Spice Withdrawl</label>
     </value>
   </Operation>
-  <!-- Add description "The Spice Must Flow" -->
+  <!-- Add withdrawal "The Spice Must Flow" -->
   <Operation Class="PatchOperationInsert">
     <xpath>Defs/HediffDef[defName="PlanetariumAddiction"]</xpath>
     <order>Append</order>
