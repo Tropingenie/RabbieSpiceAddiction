@@ -13,7 +13,7 @@
   </Operation>
   <!-- Add description "The Spice Must Flow" -->
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/HediffDef[defName="PlanetariumAddiction"]/stages/li[2]/label</xpath>
+    <xpath>Defs/HediffDef[defName="PlanetariumAddiction"]/stages/li[2]</xpath>
     <value>
       <description>The spice must flow...</description>
     </value>
