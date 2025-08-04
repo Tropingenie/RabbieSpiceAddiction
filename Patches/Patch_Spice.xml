@@ -13,9 +13,25 @@
   </Operation>
   <!-- Add description "The Spice Must Flow" -->
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/HediffDef[defName="PlanetariumAddiction"]/stages/li[2]</xpath>
+    <xpath>Defs/HediffDef[defName="PlanetariumAddiction"]</xpath>
     <value>
-      <description>The spice must flow...</description>
+        <ThoughtDef>
+            <defName>PlanetariumWithdrawal</defName>
+            <workerClass>ThoughtWorker_Hediff</workerClass>
+            <hediff>PlanetariumAddiction</hediff>
+            <validWhileDespawned>true</validWhileDespawned>
+            <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+            <stages>
+            <li>
+                <visible>false</visible>
+            </li>
+            <li>
+                <label>spice withdrawal</label>
+                <description>The spice must flow...</description>
+                <baseMoodEffect>-20</baseMoodEffect>
+            </li>
+            </stages>
+        </ThoughtDef>
     </value>
   </Operation>
 </Patch>
