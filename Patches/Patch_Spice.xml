@@ -12,8 +12,9 @@
     </value>
   </Operation>
   <!-- Add description "The Spice Must Flow" -->
-  <Operation Class="PatchOperationAdd">
+  <Operation Class="PatchOperationInsert">
     <xpath>Defs/HediffDef[defName="PlanetariumAddiction"]</xpath>
+    <order>Append</order>
     <value>
         <ThoughtDef>
             <defName>PlanetariumWithdrawal</defName>
