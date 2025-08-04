@@ -20,9 +20,9 @@
         </li>
     </modDependencies>
 
-    <loadafter>
+    <loadAfter>
         <li>RunneLatki.RabbieRaceMod</li>
-    </loadafter>
+    </loadAfter>
 
     <forceLoadAfter>
         <li>RunneLatki.RabbieRaceMod</li>
