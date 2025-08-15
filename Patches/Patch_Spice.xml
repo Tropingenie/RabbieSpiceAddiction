@@ -37,7 +37,7 @@
   </Operation>
   <!-- Add severity reduction -->
   <Operation Class="PatchOperationInsert">
-    <xpath>/Defs/HediffDef[defName="PlanetariumAddiction"]/comps</xpath>
+    <xpath>/Defs/HediffDef[defName="PlanetariumAddiction"]/comps/li</xpath>
     <value>
       <li Class="HediffCompProperties_SeverityPerDay">
         <!-- debug: copied from smokeleaf -->
