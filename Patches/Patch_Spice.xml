@@ -35,4 +35,11 @@
         </ThoughtDef>
     </value>
   </Operation>
+  <!-- Add severity reduction -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/HediffDef[@ParentName="AddictionBase"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]</xpath>
+    <value>
+      <severityPerDay>-0.0001</severityPerDay>
+    </value>
+  </Operation>
 </Patch>
