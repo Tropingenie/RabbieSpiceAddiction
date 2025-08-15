@@ -36,10 +36,14 @@
     </value>
   </Operation>
   <!-- Add severity reduction -->
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/HediffDef[@ParentName="AddictionBase"]/comps/li[@Class="HediffCompProperties_SeverityPerDay"]</xpath>
+  <Operation Class="PatchOperationInsert">
+    <xpath>/Defs/HediffDef[@ParentName="AddictionBase"]/comps</xpath>
     <value>
-      <severityPerDay>-0.0001</severityPerDay>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <!-- debug: copied from smokeleaf -->
+        <severityPerDay>-0.0333</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
     </value>
   </Operation>
 </Patch>
